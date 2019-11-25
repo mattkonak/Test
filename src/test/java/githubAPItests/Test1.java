@@ -30,8 +30,7 @@ public class Test1 {
 	JSONObject obj;
 	JSONArray arr;
 	UnauthorizedUserMessageBody unauthMessage;
-//	String userName="mattkonak";
-//	String password="Abk141414";
+
 	
 	public static String username = ConfigurationReader.getProperty("userName");
 	public static String password = ConfigurationReader.getProperty("password");
@@ -63,6 +62,7 @@ public class Test1 {
 		expectedFullname.add("mattkonak/example2");
 		expectedFullname.add("mattkonak/example3");
 		expectedFullname.add("mattkonak/example4");
+		expectedFullname.add("mattkonak/Test");
 		List<String> actual=new ArrayList<String>();
 		response = RestAssured.given().relaxedHTTPSValidation().auth().preemptive().basic(username, password).
         when().get("/user/repos");

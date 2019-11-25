@@ -2,88 +2,88 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4858" started-at="2019-11-25T01:16:34Z" finished-at="2019-11-25T01:16:39Z">
+  <suite name="Default suite" duration-ms="7229" started-at="2019-11-25T18:48:42Z" finished-at="2019-11-25T18:48:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4858" started-at="2019-11-25T01:16:34Z" finished-at="2019-11-25T01:16:39Z">
+    <test name="Default test" duration-ms="7229" started-at="2019-11-25T18:48:42Z" finished-at="2019-11-25T18:48:49Z">
       <class name="githubAPItests.Test1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="11" started-at="2019-11-25T01:16:34Z" finished-at="2019-11-25T01:16:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="28" started-at="2019-11-25T18:48:42Z" finished-at="2019-11-25T18:48:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="authorizationUserFullNameReposVerification()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="authorizationUserFullNameReposVerification" duration-ms="2022" started-at="2019-11-25T01:16:34Z" finished-at="2019-11-25T01:16:36Z">
+        <test-method status="PASS" signature="authorizationUserFullNameReposVerification()[pri:0, instance:githubAPItests.Test1@625732]" name="authorizationUserFullNameReposVerification" duration-ms="4212" started-at="2019-11-25T18:48:42Z" finished-at="2019-11-25T18:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizationUserFullNameReposVerification -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:36Z" finished-at="2019-11-25T01:16:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-25T18:48:46Z" finished-at="2019-11-25T18:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="authorizedUserStatusCodeVerification()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="authorizedUserStatusCodeVerification" duration-ms="411" started-at="2019-11-25T01:16:36Z" finished-at="2019-11-25T01:16:37Z">
+        <test-method status="PASS" signature="authorizedUserStatusCodeVerification()[pri:0, instance:githubAPItests.Test1@625732]" name="authorizedUserStatusCodeVerification" duration-ms="582" started-at="2019-11-25T18:48:46Z" finished-at="2019-11-25T18:48:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizedUserStatusCodeVerification -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:37Z" finished-at="2019-11-25T01:16:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="authorizeduUserGivenFirstPageAndOnePerPageOwnerIDVerificationByUsingParamater()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="authorizeduUserGivenFirstPageAndOnePerPageOwnerIDVerificationByUsingParamater" duration-ms="335" started-at="2019-11-25T01:16:37Z" finished-at="2019-11-25T01:16:37Z">
+        <test-method status="PASS" signature="authorizeduUserGivenFirstPageAndOnePerPageOwnerIDVerificationByUsingParamater()[pri:0, instance:githubAPItests.Test1@625732]" name="authorizeduUserGivenFirstPageAndOnePerPageOwnerIDVerificationByUsingParamater" duration-ms="321" started-at="2019-11-25T18:48:47Z" finished-at="2019-11-25T18:48:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizeduUserGivenFirstPageAndOnePerPageOwnerIDVerificationByUsingParamater -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:37Z" finished-at="2019-11-25T01:16:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T18:48:47Z" finished-at="2019-11-25T18:48:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="authorizeduUserGivenFirstPageAndOnePerPageOwnerLoginVerificationByUsingParamater()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="authorizeduUserGivenFirstPageAndOnePerPageOwnerLoginVerificationByUsingParamater" duration-ms="325" started-at="2019-11-25T01:16:37Z" finished-at="2019-11-25T01:16:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-25T18:48:47Z" finished-at="2019-11-25T18:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="authorizeduUserGivenFirstPageAndOnePerPageOwnerLoginVerificationByUsingParamater()[pri:0, instance:githubAPItests.Test1@625732]" name="authorizeduUserGivenFirstPageAndOnePerPageOwnerLoginVerificationByUsingParamater" duration-ms="314" started-at="2019-11-25T18:48:47Z" finished-at="2019-11-25T18:48:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizeduUserGivenFirstPageAndOnePerPageOwnerLoginVerificationByUsingParamater -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:37Z" finished-at="2019-11-25T01:16:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="authorizeduUserGivenSecondPageItwillreturnZeroRepoObjectVerificationByUsingParamater()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="authorizeduUserGivenSecondPageItwillreturnZeroRepoObjectVerificationByUsingParamater" duration-ms="277" started-at="2019-11-25T01:16:37Z" finished-at="2019-11-25T01:16:38Z">
+        <test-method status="PASS" signature="authorizeduUserGivenSecondPageItwillreturnZeroRepoObjectVerificationByUsingParamater()[pri:0, instance:githubAPItests.Test1@625732]" name="authorizeduUserGivenSecondPageItwillreturnZeroRepoObjectVerificationByUsingParamater" duration-ms="277" started-at="2019-11-25T18:48:48Z" finished-at="2019-11-25T18:48:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizeduUserGivenSecondPageItwillreturnZeroRepoObjectVerificationByUsingParamater -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T18:48:48Z" finished-at="2019-11-25T18:48:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="authorizeduUserGivenfirstPageandFourPerPageItwillreturnFourRepoObjectVerifiationByUsingParamaters()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="authorizeduUserGivenfirstPageandFourPerPageItwillreturnFourRepoObjectVerifiationByUsingParamaters" duration-ms="323" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T18:48:48Z" finished-at="2019-11-25T18:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="authorizeduUserGivenfirstPageandFourPerPageItwillreturnFourRepoObjectVerifiationByUsingParamaters()[pri:0, instance:githubAPItests.Test1@625732]" name="authorizeduUserGivenfirstPageandFourPerPageItwillreturnFourRepoObjectVerifiationByUsingParamaters" duration-ms="337" started-at="2019-11-25T18:48:48Z" finished-at="2019-11-25T18:48:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizeduUserGivenfirstPageandFourPerPageItwillreturnFourRepoObjectVerifiationByUsingParamaters -->
-        <test-method status="PASS" signature="authorizeduUserGivenfirstPageandOnePerPageItwillreturnOneRepoObjectVerificationByUsingParamaters()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="authorizeduUserGivenfirstPageandOnePerPageItwillreturnOneRepoObjectVerificationByUsingParamaters" duration-ms="333" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-25T18:48:48Z" finished-at="2019-11-25T18:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="authorizeduUserGivenfirstPageandOnePerPageItwillreturnOneRepoObjectVerificationByUsingParamaters()[pri:0, instance:githubAPItests.Test1@625732]" name="authorizeduUserGivenfirstPageandOnePerPageItwillreturnOneRepoObjectVerificationByUsingParamaters" duration-ms="323" started-at="2019-11-25T18:48:48Z" finished-at="2019-11-25T18:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorizeduUserGivenfirstPageandOnePerPageItwillreturnOneRepoObjectVerificationByUsingParamaters -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-25T18:48:49Z" finished-at="2019-11-25T18:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="unauthorizedUserAttamptMessageVerificationVerification()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="unauthorizedUserAttamptMessageVerificationVerification" duration-ms="270" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:38Z">
+        <test-method status="PASS" signature="unauthorizedUserAttamptMessageVerificationVerification()[pri:0, instance:githubAPItests.Test1@625732]" name="unauthorizedUserAttamptMessageVerificationVerification" duration-ms="250" started-at="2019-11-25T18:48:49Z" finished-at="2019-11-25T18:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unauthorizedUserAttamptMessageVerificationVerification -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-25T18:48:49Z" finished-at="2019-11-25T18:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="1" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="unauthorizedUserAttamptStatusCodeVerification()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="unauthorizedUserAttamptStatusCodeVerification" duration-ms="241" started-at="2019-11-25T01:16:38Z" finished-at="2019-11-25T01:16:39Z">
+        <test-method status="PASS" signature="unauthorizedUserAttamptStatusCodeVerification()[pri:0, instance:githubAPItests.Test1@625732]" name="unauthorizedUserAttamptStatusCodeVerification" duration-ms="231" started-at="2019-11-25T18:48:49Z" finished-at="2019-11-25T18:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unauthorizedUserAttamptStatusCodeVerification -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T01:16:39Z" finished-at="2019-11-25T01:16:39Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:githubAPItests.Test1@625732]" name="setup" is-config="true" duration-ms="0" started-at="2019-11-25T18:48:49Z" finished-at="2019-11-25T18:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="unauthorizedUserAttamptdocumentation_urlVerificationVerification()[pri:0, instance:githubAPItests.Test1@51dcb805]" name="unauthorizedUserAttamptdocumentation_urlVerificationVerification" duration-ms="249" started-at="2019-11-25T01:16:39Z" finished-at="2019-11-25T01:16:39Z">
+        <test-method status="PASS" signature="unauthorizedUserAttamptdocumentation_urlVerificationVerification()[pri:0, instance:githubAPItests.Test1@625732]" name="unauthorizedUserAttamptdocumentation_urlVerificationVerification" duration-ms="228" started-at="2019-11-25T18:48:49Z" finished-at="2019-11-25T18:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unauthorizedUserAttamptdocumentation_urlVerificationVerification -->
