@@ -1,6 +1,8 @@
 package githubAPItests;
 
 import org.testng.annotations.Test;
+import org.testng.reporters.jq.BasePanel;
+
 import beans.RepoObject;
 import beans.UnauthorizedUserMessageBody;
 import org.testng.annotations.BeforeMethod;
@@ -34,7 +36,7 @@ public class Test1 {
 	
 	public static String username = ConfigurationReader.getProperty("userName");
 	public static String password = ConfigurationReader.getProperty("password");
-
+	public static String path = ConfigurationReader.getProperty("basePath");
 
 	@BeforeMethod
 	public void setup() {
@@ -50,7 +52,7 @@ public class Test1 {
 		int actual=0;
 		response = RestAssured.given().relaxedHTTPSValidation().auth().preemptive().basic(username, password)
 				.when().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).
-                when().get("/user/repos");
+                when().get(path);
 		actual=response.getStatusCode();
 		Assert.assertEquals(actual, expectedStatusCode);
 	}
@@ -65,7 +67,7 @@ public class Test1 {
 		expectedFullname.add("mattkonak/Test");
 		List<String> actual=new ArrayList<String>();
 		response = RestAssured.given().relaxedHTTPSValidation().auth().preemptive().basic(username, password).
-        when().get("/user/repos");
+        when().get(path);
 		arr=new JSONArray(response.asString());
 		for (int i = 0; i < arr.length(); i++) {
 			actual.add(arr.getJSONObject(i).getString("full_name"));
@@ -80,8 +82,8 @@ public class Test1 {
 		int expected=1;
 		int actual=0;
 		response = RestAssured.given().param("page","1").param("per_page","1").relaxedHTTPSValidation().auth().preemptive().
-				basic("mattkonak", "Abk141414").
-		        when().get("/user/repos");
+				basic(username , password).
+		        when().get(path);
 		arr=new JSONArray(response.asString());
 		actual=arr.length();
 		Assert.assertEquals(actual, expected);
@@ -93,7 +95,7 @@ public class Test1 {
 		int actual=0;
 		response = RestAssured.given().param("page","2").relaxedHTTPSValidation().auth().preemptive().
 				basic(username, password).
-		        when().get("/user/repos");
+		        when().get(path);
 		arr=new JSONArray(response.asString());
 		actual=arr.length();
 		Assert.assertEquals(actual, expected);
@@ -105,7 +107,7 @@ public class Test1 {
 		String actual="";
 		response = RestAssured.given().param("page","1").param("per_page","1").relaxedHTTPSValidation().auth().preemptive().
 				basic(username, password).
-		        when().get("/user/repos");
+		        when().get(path);
 		arr=new JSONArray(response.asString());
 		repoObj.setOwnerLogin(arr.getJSONObject(0).getJSONObject("owner").getString("login"));
 		actual=repoObj.getOwnerLogin();
@@ -118,7 +120,7 @@ public class Test1 {
 		int actual=0;
 		response = RestAssured.given().param("page","1").param("per_page","1").relaxedHTTPSValidation().auth().preemptive().
 				basic(username, password).
-		        when().get("/user/repos");
+		        when().get(path);
 		arr=new JSONArray(response.asString());
 		repoObj.setLoginId(arr.getJSONObject(0).getJSONObject("owner").getInt("id"));
 		actual=repoObj.getLoginId();
@@ -131,7 +133,7 @@ public class Test1 {
 		int actual=0;
 		response = RestAssured.given().param("page","1").param("per_page","4").relaxedHTTPSValidation().auth().preemptive().
 				basic(username, password).
-		        when().get("/user/repos");
+		        when().get(path);
 		arr=new JSONArray(response.asString());
 		actual=arr.length();
 		Assert.assertEquals(actual, expected);
@@ -141,7 +143,7 @@ public class Test1 {
 	public void unauthorizedUserAttamptStatusCodeVerification() {
 		int expectedStatusCode=401;
 		response = RestAssured.given().relaxedHTTPSValidation().
-                when().get("/user/repos");	
+                when().get(path);	
 		Assert.assertEquals(response.getStatusCode(), expectedStatusCode);
 	}
 	
@@ -150,7 +152,7 @@ public class Test1 {
 		String expectedMessages="Requires authentication";
 		String actual="";
 		response = RestAssured.given().relaxedHTTPSValidation().
-                when().get("/user/repos");
+                when().get(path);
 		obj=new JSONObject(response.asString());
 		unauthMessage.setMessage(obj.getString("message"));
 		actual=unauthMessage.getMessage();
@@ -162,7 +164,7 @@ public class Test1 {
 		String expecteddocumentation_url="https://developer.github.com/v3/repos/#list-your-repositories";
 		String actual="";
 		response = RestAssured.given().relaxedHTTPSValidation().
-                when().get("/user/repos");
+                when().get(path);
 		obj=new JSONObject(response.asString());
 		unauthMessage.setDocumentation_url(obj.getString("documentation_url"));
 		actual=unauthMessage.getDocumentation_url();
